@@ -15,3 +15,5 @@ The microphone is based on the open source project "Electrolush" designed by Jon
 ### Processor 
 
 A Teensy 4.0 + Audio shield Rev D constitute the sound processor. 2 potentiontimeters are used; one for changing the time of the feedback delay and one for changing the cutoff frequency of the low pass filter. 3 buttons are used, one for overdriving the feedback delay, allowing asynchronous overlapping, and one for mutting. Two 3.5mm female jacks are used for input and output. 
+
+![Microphone](./Schematics/MicrophoneSchematic.png)
