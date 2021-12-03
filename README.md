@@ -8,12 +8,15 @@ The name FRDYER is a tribute to Michael Faraday, for his contributions towards t
 
 As stated before, the FRDYER is built upon a microphone and a signal processor. 
 
-### Microphone
+- ### Microphone
 
 The microphone is based on the open source project "Electrolush" designed by Jonas Gruska. Two inductors convert the electromagnetic field into electricity which is then passed to an operational amplifier to create an oscillating signal and amplify it. An audio jack is connected to this ciruitry in order to output the signal. The microphone is powered by a 9V battery.  
 
-### Processor 
+- ### Processor 
 
 A Teensy 4.0 + Audio shield Rev D constitute the sound processor. 2 potentiontimeters are used; one for changing the time of the feedback delay and one for changing the cutoff frequency of the low pass filter. 3 buttons are used, one for overdriving the feedback delay, allowing asynchronous overlapping, and one for mutting. Two 3.5mm female jacks are used for input and output. 
 
+## Schematics
+
+<summary>Microphone</summary>
 ![Microphone](./Schematics/MicSchem.jpg)
