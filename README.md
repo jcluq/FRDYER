@@ -24,12 +24,12 @@ A Teensy 4.0 + Audio shield Rev D constitute the sound processor. 2 potentiontim
 <details>
 <summary>Microphone</summary>
 
-![Microphone](./schematics/MicSchem.jpg)
-
+![Microphone](./Schematics/MicSchem.jpg)
+</details>
+<details>
 <summary>Processor</summary>
 
-![Processor](./schematics/ProSchem.jpg)
-
+![Processor](./Schematics/ProSchem.jpg)
 </details>
 
 ## Code
@@ -43,3 +43,11 @@ This routing used for the FRDYER:
 ![routing](./code/FRDYERAudioSystemDesign.PNG)
 
 ## Photos
+
+![](./photos/DSC08654.JPG)
+![](./photos/DSC08656.JPG)
+![](./photos/DSC08657.JPG)
+![](./photos/DSC08665.JPG)
+![](./photos/DSC08686.JPG)
+![](./photos/DSC08677.JPG)
+![](./photos/DSC08697.JPG)
