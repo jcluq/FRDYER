@@ -1,0 +1,384 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+9V #PWR0101
+U 1 1 61B83722
+P 7400 4300
+F 0 "#PWR0101" H 7400 4150 50  0001 C CNN
+F 1 "+9V" H 7415 4473 50  0000 C CNN
+F 2 "" H 7400 4300 50  0001 C CNN
+F 3 "" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-9V #PWR0102
+U 1 1 61B8451E
+P 7400 4800
+F 0 "#PWR0102" H 7400 4675 50  0001 C CNN
+F 1 "-9V" H 7415 4973 50  0000 C CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 61B86A91
+P 8000 4350
+F 0 "C5" H 8118 4396 50  0000 L CNN
+F 1 "100uF" H 8118 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 8038 4200 50  0001 C CNN
+F 3 "~" H 8000 4350 50  0001 C CNN
+	1    8000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 61B88129
+P 8000 4750
+F 0 "C6" H 8118 4796 50  0000 L CNN
+F 1 "100uf" H 8118 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 8038 4600 50  0001 C CNN
+F 3 "~" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61B8914A
+P 8550 4750
+F 0 "R6" H 8620 4796 50  0000 L CNN
+F 1 "100K" H 8620 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8480 4750 50  0001 C CNN
+F 3 "~" H 8550 4750 50  0001 C CNN
+	1    8550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61B8A10C
+P 8550 4350
+F 0 "R5" H 8620 4396 50  0000 L CNN
+F 1 "100K" H 8620 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8480 4350 50  0001 C CNN
+F 3 "~" H 8550 4350 50  0001 C CNN
+	1    8550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4300 7400 4200
+Wire Wire Line
+	7400 4200 8000 4200
+Wire Wire Line
+	7400 4900 8000 4900
+Wire Wire Line
+	7400 4800 7400 4900
+Connection ~ 8000 4900
+Wire Wire Line
+	8000 4900 8550 4900
+Wire Wire Line
+	8000 4200 8550 4200
+Connection ~ 8000 4200
+Wire Wire Line
+	8000 4500 8000 4600
+Wire Wire Line
+	8000 4600 8550 4600
+Wire Wire Line
+	8550 4600 8550 4500
+Connection ~ 8000 4600
+Connection ~ 8550 4600
+Wire Wire Line
+	8000 4600 7800 4600
+$Comp
+L power:GND #PWR0103
+U 1 1 61B8E96B
+P 7800 4600
+F 0 "#PWR0103" H 7800 4350 50  0001 C CNN
+F 1 "GND" H 7805 4427 50  0000 C CNN
+F 2 "" H 7800 4600 50  0001 C CNN
+F 3 "" H 7800 4600 50  0001 C CNN
+	1    7800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #-4.5V0101
+U 1 1 61B95755
+P 8850 4900
+F 0 "#-4.5V0101" H 8745 4988 50  0000 R CNN
+F 1 "-VDC" H 8850 5175 50  0001 C CNN
+F 2 "" H 8850 4900 50  0001 C CNN
+F 3 "" H 8850 4900 50  0001 C CNN
+	1    8850 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+VDC #+4.5V0101
+U 1 1 61B96B31
+P 8850 4200
+F 0 "#+4.5V0101" H 8955 4288 50  0000 L CNN
+F 1 "+VDC" H 8850 4475 50  0001 C CNN
+F 2 "" H 8850 4200 50  0001 C CNN
+F 3 "" H 8850 4200 50  0001 C CNN
+	1    8850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4200 8850 4200
+Connection ~ 8550 4200
+Wire Wire Line
+	8550 4900 8850 4900
+Connection ~ 8550 4900
+$Comp
+L power:GND #PWR0104
+U 1 1 61B832AF
+P 4950 3100
+F 0 "#PWR0104" H 4950 2850 50  0001 C CNN
+F 1 "GND" H 4955 2927 50  0000 C CNN
+F 2 "" H 4950 3100 50  0001 C CNN
+F 3 "" H 4950 3100 50  0001 C CNN
+	1    4950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2950 4950 3100
+Wire Wire Line
+	4850 2850 4950 2850
+Wire Wire Line
+	4850 3750 4850 2850
+Wire Wire Line
+	4950 2300 4950 2750
+Wire Wire Line
+	4850 2300 4950 2300
+$Comp
+L Connector:AudioJack3_Ground J1
+U 1 1 61B7B49A
+P 5150 2850
+F 0 "J1" H 4870 2726 50  0000 R CNN
+F 1 "AudioJack3_Ground" H 4870 2817 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3524-SMT_Horizontal" H 5150 2850 50  0001 C CNN
+F 3 "~" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	-1   0    0    1   
+$EndComp
+Connection ~ 4250 2300
+Wire Wire Line
+	4550 2300 4250 2300
+Connection ~ 4200 3750
+Wire Wire Line
+	4550 3750 4200 3750
+$Comp
+L Device:C C4
+U 1 1 61B7893B
+P 4700 3750
+F 0 "C4" V 4448 3750 50  0000 C CNN
+F 1 "2.2uF" V 4539 3750 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 4738 3600 50  0001 C CNN
+F 3 "~" H 4700 3750 50  0001 C CNN
+	1    4700 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61B78176
+P 4700 2300
+F 0 "C3" V 4448 2300 50  0000 C CNN
+F 1 "2.2uF" V 4539 2300 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 4738 2150 50  0001 C CNN
+F 3 "~" H 4700 2300 50  0001 C CNN
+	1    4700 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61B7669B
+P 2500 3500
+F 0 "#PWR0105" H 2500 3250 50  0001 C CNN
+F 1 "GND" H 2505 3327 50  0000 C CNN
+F 2 "" H 2500 3500 50  0001 C CNN
+F 3 "" H 2500 3500 50  0001 C CNN
+	1    2500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3500 2300 3650
+Connection ~ 2300 3500
+Wire Wire Line
+	2300 3500 2500 3500
+Wire Wire Line
+	2300 3350 2300 3500
+Wire Wire Line
+	2300 2750 2300 3050
+Wire Wire Line
+	2600 2750 2900 2750
+$Comp
+L Device:C C2
+U 1 1 61B740D0
+P 2450 2750
+F 0 "C2" V 2198 2750 50  0000 C CNN
+F 1 "2.2uF" V 2289 2750 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 2488 2600 50  0001 C CNN
+F 3 "~" H 2450 2750 50  0001 C CNN
+	1    2450 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4250 2600 4250
+$Comp
+L Device:C C1
+U 1 1 61B6405C
+P 2450 4250
+F 0 "C1" V 2198 4250 50  0000 C CNN
+F 1 "2.2uF" V 2289 4250 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 2488 4100 50  0001 C CNN
+F 3 "~" H 2450 4250 50  0001 C CNN
+	1    2450 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 3950 2300 4250
+$Comp
+L Device:L L1
+U 1 1 61B6B6FA
+P 2300 3200
+F 0 "L1" H 2353 3246 50  0000 L CNN
+F 1 "2.2mH" H 2353 3155 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P5.08mm_Vertical_Fastron_SMCC" H 2300 3200 50  0001 C CNN
+F 3 "~" H 2300 3200 50  0001 C CNN
+	1    2300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 61B6ADD5
+P 2300 3800
+F 0 "L2" H 2353 3846 50  0000 L CNN
+F 1 "2.2mH" H 2353 3755 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P5.08mm_Vertical_Fastron_SMCC" H 2300 3800 50  0001 C CNN
+F 3 "~" H 2300 3800 50  0001 C CNN
+	1    2300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2300 4250 2750
+Wire Wire Line
+	3400 2400 3400 2750
+Wire Wire Line
+	3650 2400 3400 2400
+Wire Wire Line
+	3400 2750 3650 2750
+Connection ~ 3400 2750
+Wire Wire Line
+	3200 2750 3400 2750
+$Comp
+L Device:R R4
+U 1 1 61B4E8EA
+P 3050 2750
+F 0 "R4" V 2843 2750 50  0000 C CNN
+F 1 "1K" V 2934 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2750 50  0001 C CNN
+F 3 "~" H 3050 2750 50  0001 C CNN
+	1    3050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61B4E8E4
+P 3800 2750
+F 0 "R3" V 4007 2750 50  0000 C CNN
+F 1 "390K" V 3916 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3730 2750 50  0001 C CNN
+F 3 "~" H 3800 2750 50  0001 C CNN
+	1    3800 2750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4250 2750 3950 2750
+Wire Wire Line
+	3350 3850 3600 3850
+Wire Wire Line
+	3350 4250 3600 4250
+Connection ~ 3350 4250
+Wire Wire Line
+	3350 4250 3350 3850
+Wire Wire Line
+	3150 4250 3350 4250
+$Comp
+L Device:R R2
+U 1 1 61B370C4
+P 3000 4250
+F 0 "R2" V 2793 4250 50  0000 C CNN
+F 1 "1K" V 2884 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2930 4250 50  0001 C CNN
+F 3 "~" H 3000 4250 50  0001 C CNN
+	1    3000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61B3B281
+P 3750 4250
+F 0 "R1" V 3543 4250 50  0000 C CNN
+F 1 "390K" V 3634 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3680 4250 50  0001 C CNN
+F 3 "~" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4200 4250 3900 4250
+$Comp
+L Amplifier_Operational:RC4558 U1
+U 1 1 61B48E78
+P 3950 2300
+F 0 "U1" H 3950 2667 50  0000 C CNN
+F 1 "RC4558" H 3950 2576 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3950 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 3950 2300 50  0001 C CNN
+	1    3950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3750 4200 4250
+Text Notes 7700 5100 0    50   ~ 0
+Virtual Ground Circuit\n
+Text Notes 2850 2350 0    50   ~ 0
+Right Channel\n
+Text Notes 4400 4000 0    50   ~ 0
+Left Channel\n
+$Comp
+L Amplifier_Operational:RC4558 U1
+U 3 1 61B5D407
+P 3950 2300
+F 0 "U1" H 3908 2346 50  0000 L CNN
+F 1 "RC4558" H 3908 2255 50  0000 L CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3950 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 3950 2300 50  0001 C CNN
+	3    3950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:RC4558 U1
+U 2 1 61B25F08
+P 3900 3750
+F 0 "U1" H 3900 4117 50  0000 C CNN
+F 1 "RC4558" H 3900 4026 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3900 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 3900 3750 50  0001 C CNN
+	2    3900 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
